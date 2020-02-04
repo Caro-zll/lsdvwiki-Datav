@@ -150,7 +150,7 @@ export default {
     if(cityTag == '哈尔滨市'){
       if (otherParams == 1) {
         this.axios
-          .get("/data/sheet/第一部分1.json")
+          .get("/lsdvwiki-Datav/data/sheet/第一部分1.json")
           .then(response => {
             //console.log(response, response.data);
             let dataF = response.data;
@@ -169,7 +169,7 @@ export default {
           .then(graphDataObj1 => {
             this.Area1 = this.Area1.concat(graphDataObj1);
             this.axios
-              .get("/data/sheet/第一部分2.json")
+              .get("/lsdvwiki-Datav/data/sheet/第一部分2.json")
               .then(response => {
                 let dataF = response.data;
                 return dataF;
@@ -186,7 +186,7 @@ export default {
               .then(graphDataObj2 => {
                 this.Area1 = this.Area1.concat(graphDataObj2);
                 this.axios
-                  .get("/data/sheet/第一部分3.json")
+                  .get("/lsdvwiki-Datav/data/sheet/第一部分3.json")
                   .then(response => {
                     let dataF = response.data;
                     return dataF;
@@ -225,7 +225,7 @@ export default {
       }
       if (otherParams == 2) {
         this.axios
-            .get("/data/sheet/第二部分1.json")
+            .get("/lsdvwiki-Datav/data/sheet/第二部分1.json")
             .then(response => {
               //console.log(response, response.data);
               let dataF = response.data;
@@ -244,7 +244,7 @@ export default {
             .then(graphDataObj1 => {
               this.Area2 = this.Area2.concat(graphDataObj1);
               this.axios
-                .get("/data/sheet/第二部分2.json")
+                .get("/lsdvwiki-Datav/data/sheet/第二部分2.json")
                 .then(response => {
                   let dataF = response.data;
                   return dataF;
@@ -261,7 +261,7 @@ export default {
                 .then(graphDataObj2 => {
                   this.Area2 = this.Area2.concat(graphDataObj2);
                   this.axios
-                    .get("/data/sheet/第二部分3.json")
+                    .get("/lsdvwiki-Datav/data/sheet/第二部分3.json")
                     .then(response => {
                       let dataF = response.data;
                       return dataF;
@@ -300,7 +300,7 @@ export default {
       }
       if (otherParams == 3) {
         this.axios
-            .get("/data/sheet/第三部分1.json")
+            .get("/lsdvwiki-Datav/data/sheet/第三部分1.json")
             .then(response => {
               //console.log(response, response.data);
               let dataF = response.data;
@@ -319,7 +319,7 @@ export default {
             .then(graphDataObj1 => {
               this.Area3 = this.Area3.concat(graphDataObj1);
               this.axios
-                .get("/data/sheet/第三部分2.json")
+                .get("/lsdvwiki-Datav/data/sheet/第三部分2.json")
                 .then(response => {
                   let dataF = response.data;
                   return dataF;
@@ -336,7 +336,7 @@ export default {
                 .then(graphDataObj2 => {
                   this.Area3 = this.Area3.concat(graphDataObj2);
                   this.axios
-                    .get("/data/sheet/第三部分3.json")
+                    .get("/lsdvwiki-Datav/data/sheet/第三部分3.json")
                     .then(response => {
                       let dataF = response.data;
                       return dataF;
@@ -355,7 +355,7 @@ export default {
                       this.Area3 = this.Area3.concat(graphDataObj3);
                     })
                     .then(() => {
-              this.axios.get("/data/sheet/2015年_2017年哈尔滨市政务服务指数情况表.json").then(response=>{
+              this.axios.get("/lsdvwiki-Datav/data/sheet/2015年_2017年哈尔滨市政务服务指数情况表.json").then(response=>{
                 let dataF = response.data;
                           return dataF;
               }).then((dataF)=>{
@@ -392,7 +392,7 @@ export default {
       }
       if (otherParams == 4) {
         this.axios
-            .get("/data/sheet/第四部分1.json")
+            .get("/lsdvwiki-Datav/data/sheet/第四部分1.json")
             .then(response => {
               //console.log(response, response.data);
               let dataF = response.data;
@@ -411,7 +411,7 @@ export default {
             .then(graphDataObj1 => {
               this.Area4 = this.Area4.concat(graphDataObj1);
               this.axios
-                .get("/data/sheet/第四部分2.json")
+                .get("/lsdvwiki-Datav/data/sheet/第四部分2.json")
                 .then(response => {
                   let dataF = response.data;
                   return dataF;
@@ -428,7 +428,7 @@ export default {
                 .then(graphDataObj2 => {
                   this.Area4 = this.Area4.concat(graphDataObj2);
                   this.axios
-                    .get("/data/sheet/第四部分3.json")
+                    .get("/lsdvwiki-Datav/data/sheet/第四部分3.json")
                     .then(response => {
                       let dataF = response.data;
                       return dataF;
@@ -468,7 +468,7 @@ export default {
       if (otherParams == 5) {
         console.log("yes 5:S::S");
         this.axios
-            .get("/data/sheet/第五部分.json")
+            .get("/lsdvwiki-Datav/data/sheet/第五部分.json")
             .then(response => {
               //console.log(response, response.data);
               let dataF = response.data;
@@ -503,7 +503,7 @@ export default {
       }
       if (otherParams == 6) {
         this.axios
-            .get("/data/sheet/2015年_2017年哈尔滨市固定宽带普及率与移动宽带普及率情.json")
+            .get("/lsdvwiki-Datav/data/sheet/2015年_2017年哈尔滨市固定宽带普及率与移动宽带普及率情.json")
             .then(response => {
               //console.log(response, response.data);
               let dataF = response.data;
@@ -522,7 +522,7 @@ export default {
             .then(graphDataObj1 => {
               this.Area6 = this.Area6.concat(graphDataObj1);
               this.axios
-                .get("/data/sheet/2015年_2017年东北四个副省级城市通信业情况.json")
+                .get("/lsdvwiki-Datav/data/sheet/2015年_2017年东北四个副省级城市通信业情况.json")
                 .then(response => {
                   let dataF = response.data;
                   return dataF;
@@ -557,7 +557,7 @@ export default {
       }
       if (otherParams == 7) {
         this.axios
-          .get("/data/sheet/2015年_2017年哈尔滨市信息化推进城乡协调发展情况表1.json")
+          .get("/lsdvwiki-Datav/data/sheet/2015年_2017年哈尔滨市信息化推进城乡协调发展情况表1.json")
           .then(response => {
             //console.log(response, response.data);
             let dataF = response.data;
@@ -574,7 +574,7 @@ export default {
           .then(graphDataObj1 => {
             this.Area7 = this.Area7.concat(graphDataObj1);
           
-              this.axios.get("/data/sheet/2015年_2017年哈尔滨市信息化推进城乡协调发展情况表2.json").then(response=>{
+              this.axios.get("/lsdvwiki-Datav/data/sheet/2015年_2017年哈尔滨市信息化推进城乡协调发展情况表2.json").then(response=>{
                 let dataF = response.data;
                 return dataF;
               }).then(dataF=>{
@@ -587,7 +587,7 @@ export default {
               }).then(graphDataObj2=>{
                 this.Area7 = this.Area7.concat(graphDataObj2);
                 this.axios
-              .get("/data/sheet/2015年-2017年哈尔滨市网络零售额占比与人均快递物流量情.json")
+              .get("/lsdvwiki-Datav/data/sheet/2015年-2017年哈尔滨市网络零售额占比与人均快递物流量情.json")
               .then(response => {
                 let dataF = response.data;
                 return dataF;
@@ -603,7 +603,7 @@ export default {
               .then(graphDataObj3 => {
                 this.Area7 = this.Area7.concat(graphDataObj3);
                 this.axios
-                  .get("/data/sheet/2015年_2017年哈尔滨市农业信息化情况表.json")
+                  .get("/lsdvwiki-Datav/data/sheet/2015年_2017年哈尔滨市农业信息化情况表.json")
                   .then(response => {
                     let dataF = response.data;
                     return dataF;
@@ -643,7 +643,7 @@ export default {
       }
       if (otherParams == 8) {
         this.axios
-            .get("/data/sheet/2015年-2017年哈尔滨市政务服务指数情况表.json")
+            .get("/lsdvwiki-Datav/data/sheet/2015年-2017年哈尔滨市政务服务指数情况表.json")
             .then(response => {
               // console.log(response, response.data);
               let dataF = response.data;
@@ -661,7 +661,7 @@ export default {
             .then(graphDataObj1 => {
               this.Area8 = this.Area8.concat(graphDataObj1);
               this.axios
-                .get("/data/sheet/2015年_2017年哈尔滨市便民服务指标数据年度社会保障卡.json")
+                .get("/lsdvwiki-Datav/data/sheet/2015年_2017年哈尔滨市便民服务指标数据年度社会保障卡.json")
                 .then(response => {
                   let dataF = response.data;
                   return dataF;

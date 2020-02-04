@@ -6,7 +6,7 @@
 // const myEnlarge = {
 //     show: true,
 //     title: '放大',
-//     icon: 'image:///data/img/enlarge.svg',//按钮图片的位置
+//     icon: 'image:///lsdvwiki-Datav/data/img/enlarge.svg',//按钮图片的位置
 //     onclick: (yourOption)=>{
 //         //console.log("tool");
 //         var mask = document.getElementById("mask");

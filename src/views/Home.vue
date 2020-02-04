@@ -454,7 +454,7 @@ export default {
             myEnlarge:{//放大按钮，自定义按钮必须以my开头
               show:true,
               title:'放大',
-              icon:'image:///data/img/enlarge.svg',//按钮图片的位置
+              icon:'image:///lsdvwiki-Datav/data/img/enlarge.svg',//按钮图片的位置
               onclick: function (){
                 var mask=document.getElementById("mask");
                 var show=document.getElementById("show");
@@ -572,7 +572,7 @@ export default {
 	beforeCreate(){},
 	created() {
 
-		this.axios.get('/data/sheet/classify.json').then((response) => {
+		this.axios.get('/lsdvwiki-Datav/data/sheet/classify.json').then((response) => {
 			// 全省的分类型总体数据
 			this.classifyData = response.data;
 			// //console.log("created",this.classifyData);
@@ -596,7 +596,7 @@ export default {
 		this.provinceMaps = this.provinceMap;
 		this.provinceBars = this.provinceBar;
 		// 省地图的显示初始化
-		this.axios.get('/data/hlj.json').then((response) => {
+		this.axios.get('/lsdvwiki-Datav/data/hlj.json').then((response) => {
 			// //console.log(response);
 			this.hljJson = response.data;
 		}).then(()=>{
@@ -614,7 +614,7 @@ export default {
 						myEnlarge: {//放大按钮，自定义按钮必须以my开头
 							show: true,
 							title: '放大',						
-							icon: 'image:///data/img/enlarge.svg',//按钮图片的位置
+							icon: 'image:///lsdvwiki-Datav/data/img/enlarge.svg',//按钮图片的位置
 							onclick:()=>{
 								var mask=document.getElementById("mask");
 								var show=document.getElementById("show");
@@ -679,7 +679,7 @@ export default {
 		});
 
 		// 读取全省的整体信息化发展水平bar图作为渲染数据备用
-		this.axios.get('/data/sheet/province.json').then((response) => {
+		this.axios.get('/lsdvwiki-Datav/data/sheet/province.json').then((response) => {
 			// 获取全省的总指标数据json。
 			this.provinceData = response.data;
 		}).then(()=>{
@@ -691,11 +691,11 @@ export default {
 			this.tabSelect();
 		});
 
-		this.axios.get('/data/sheet/advanceInform.json').then((response)=>{
+		this.axios.get('/lsdvwiki-Datav/data/sheet/advanceInform.json').then((response)=>{
 			this.advanceinformData = response.data;
 			// //console.log("jjjjjjjjjjjj");
 			// //console.log(response.data);
-			this.axios.get('/data/sheet/donsansKuandai.json').then((response)=>{
+			this.axios.get('/lsdvwiki-Datav/data/sheet/donsansKuandai.json').then((response)=>{
 					let dataFrom = 4;
 					// //console.log("hhhhhshdhshsh",response.data);
 					this.donsansKuandai = response.data;
@@ -732,18 +732,18 @@ initAdvanceinformBar(echarts, key,this.provinceThree,'','','接入用户增长�
 			}
 		})
 		
-		this.axios.get('/data/sheet/E_commercetransac.json').then((response) => {
+		this.axios.get('/lsdvwiki-Datav/data/sheet/E_commercetransac.json').then((response) => {
 			this.EcoDevelopInform.firstGraph = response.data;
 			return response.data;
 		}).then((d1)=>{
 			if(d1){
-				this.axios.get('/data/sheet/OnlineRetailsituation.json').then((response)=>{
+				this.axios.get('/lsdvwiki-Datav/data/sheet/OnlineRetailsituation.json').then((response)=>{
 						this.EcoDevelopInform.secondGraph = response.data;
 				}).then(()=>{
-						this.axios.get('/data/sheet/Urbanandrural.json').then((response)=>{
+						this.axios.get('/lsdvwiki-Datav/data/sheet/Urbanandrural.json').then((response)=>{
 								this.EcoDevelopInform.thirdGraph = response.data;
 						}).then(()=>{
-								this.axios.get('/data/sheet/emailBox.json').then((response)=>{
+								this.axios.get('/lsdvwiki-Datav/data/sheet/emailBox.json').then((response)=>{
 										this.EcoDevelopInform.fourthGraph = response.data;
 								}).then(()=>{
 									let dataFrom=5;
@@ -767,10 +767,10 @@ initAdvanceinformBar(echarts, key,this.provinceThree,'','','接入用户增长�
 
 		})
 
-		this.axios.get('/data/sheet/healthElectronic.json').then((response)=>{
+		this.axios.get('/lsdvwiki-Datav/data/sheet/healthElectronic.json').then((response)=>{
 			this.SocialInformDevel.firstGraph = response.data;
 		}).then(()=>{
-			this.axios.get('/data/sheet/socialInsurance.json').then((r)=>{
+			this.axios.get('/lsdvwiki-Datav/data/sheet/socialInsurance.json').then((r)=>{
 				this.SocialInformDevel.secondGraph = r.data;
 			}).then(()=>{
 					let dataFrom = 6;

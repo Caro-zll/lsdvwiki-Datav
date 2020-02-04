@@ -58,7 +58,7 @@ const initindividulIndicat = (echarts, individulIndicatIndex, classifyT, rateT, 
                 myEnlarge:{//放大按钮，自定义按钮必须以my开头
                     show:true,
                     title:'放大',						
-                    icon:'image:///data/img/enlarge.svg',//按钮图片的位置
+                    icon:'image:///lsdvwiki-Datav/data/img/enlarge.svg',//按钮图片的位置
                     onclick: function (){
                         var mask=document.getElementById("mask");
                         var show=document.getElementById("show");
