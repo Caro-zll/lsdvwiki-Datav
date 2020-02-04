@@ -1,0 +1,51 @@
+[
+    {
+        "graphObject": "canvasObj1",
+        "s":          "2"
+
+    }
+]
+
+var GrapAreaObj1 ={
+           GrapAreaArray: [
+            {
+                "graphObject": "canvasObj1",
+                
+                renderGrap: {
+                    'x':[],
+                    'y':[],
+                },
+                venderOption: {
+                    optClassifyction: 'bar',//标示混合图形类型的字段
+                    // bar=>单纯的条形图，line=>单纯的折线图，barLine=>折现和条形混图，
+                    //radar=>单纯的雷达图，barStack=>单纯Bar堆叠图，xAxisMore=>多x轴图形，yAxisMore=>多y轴图形，
+                    //....待商榷
+                    AverageTag: 1,//是否显示平均值: 0->不显示，1->显示    
+                    yAxisMorename: ["增长率","交易额(亿元)"],//当我们yAxisMore参数时这里数组长度大于1了
+                    xAxisMorename: ["年份","省份","交易类型"],//当我们xAxisMore参数时这里数组长度大于1了
+                },
+                title: '2017黑龙江省XXXX图实例',
+            },
+            {
+                renderGrap: {
+                    "中心型":{"网络基础设施就绪度":"82.5","信息化发展环境":"83.6","应用效益":"67.8","产业信息化":"92.25","发展指数":"79.77","增长率":"29.79"},
+                    "煤城型":{"网络基础设施就绪度":"64.06","信息化发展环境":"64.37","应用效益":"56.48","产业信息化":"53.6","发展指数":"60.27","增长率":"45.4"},
+                    "生态型":{"网络基础设施就绪度":"56.48","信息化发展环境":"48.97","应用效益":"69.5","产业信息化":"61.14","发展指数":"59.58","增长率":"38.24"}
+                },
+                venderOption: {
+                    optClassifyction: 'barLine',//标示混合图形类型的字段
+                    // bar=>单纯的条形图，line=>单纯的折线图，barLine=>折现和条形混图，
+                    //radar=>单纯的雷达图，barStack=>单纯Bar堆叠图，xAxisMore=>多x轴图形，yAxisMore=>多y轴图形，
+                    //....待商榷
+                    AverageTag: 1,//是否显示平均值: 0->不显示，1->显示    
+                    yAxisMorename: ["增长率","就绪度"],//当我们yAxisMore参数时这里数组长度大于1了
+                    xAxisMorename: ["区域"],//当我们xAxisMore参数时这里数组长度大于1了
+                },
+                title: '2017黑龙江省三个区域的XXXX图实例',
+            },
+            {
+                
+            }
+        ]
+        }
+    
